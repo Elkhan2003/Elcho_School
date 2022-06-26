@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #15c1e5;
+    box-shadow: 0px 5px 10px red;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 47, 255));
+    border-radius: 10px;
+    border: 2px solid #15c1e5;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    background: url(../img/clients-bg.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/*! Стили для демонстрации */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/*! conteiner */
+.conteiner {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ! header */
+.sub__title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    margin: 5px 5px 5px 5px;
+    padding: 10px 10px;
+
+    border-radius: 10px;
+
+
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 16px;
+
+    color: white;
+
+    background: -webkit-gradient(linear, left top, right top, from(#029ddf), color-stop(#68efaf), color-stop(#ff01d9), color-stop(#6702ff), to(#029ddf));
+    background: linear-gradient(to right, #029ddf, #68efaf, #ff01d9, #6702ff, #029ddf);
+    animation: gradient 9s infinite linear;
+    background-size: 400%;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0%
+    }
+
+    100% {
+        background-position: -400%
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%
+    }
+
+    100% {
+        background-position: -400%
+    }
+}
+
+.sub__title p {
+    font-size: 19px
+}
+
+@media (max-width: 768px) {
+    .sub__title h1 {
+        font-size: 28px;
+    }
+}
+
+/* ! content */
+.content {
+    margin: 0px 5px;
+}
+
+.sup__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #dadada;
+    border-radius: 10px;
+}
+
+/* ! combinations */
+.combinations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.combinations__text {
+    width: 1000px;
+    margin: 12px 0px 12px 10px;
+}
+
+@media (max-width: 768px) {
+    .combinations__text {
+        margin: 7px 0px 7px 10px;
+    }
+}
+
+hr {
+    border: 1px solid rgb(177, 177, 177);
+}
